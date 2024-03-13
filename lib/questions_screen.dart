@@ -23,8 +23,6 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
     setState(() {
       currentQuestionIndex++;
     });
-
-    currentQuestionIndex++;
   }
 
   @override
