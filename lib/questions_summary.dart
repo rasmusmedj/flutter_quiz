@@ -14,13 +14,15 @@ class QuestionsSummary extends StatelessWidget {
             children: [
               Text(((data['question_index'] as int) + 1)
                   .toString()), //typecasting "(x as int)""
-              Column(
-                children: [
-                  Text(data['question'] as String),
-                  const SizedBox(height: 5,),
-                  Text('Correct answer: ${data['correct_answer']}'),
-                  Text('Your answer: ${data['user_answer']}'),
-                ],
+              Expanded(
+                child: Column(
+                  children: [
+                    Text(data['question'] as String),
+                    const SizedBox(height: 5,),
+                    Text('Correct answer: ${data['correct_answer']}'),
+                    Text('Your answer: ${data['user_answer']}'),
+                  ],
+                ),
               ),
             ],
           );
